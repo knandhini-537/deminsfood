@@ -37,15 +37,72 @@ img, svg, picture {
 
 .delmins-announcement-bar-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
   background-color: #2D4A1E !important;
+  height: 36px !important;
   min-height: 36px !important;
-  height: auto !important;
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
-  gap: 18px !important;
-  padding: 8px 16px !important;
+  justify-content: space-evenly !important;
   width: 100% !important;
-  flex-wrap: wrap !important;
+  padding: 0 15px !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  scrollbar-width: none !important;
+}
+.delmins-announcement-bar-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7::-webkit-scrollbar {
+  display: none !important;
+}
+
+.delmins-announcement-item-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #FFFFFF !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+.delmins-announcement-item-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 svg {
+  width: 14px !important;
+  height: 14px !important;
+  flex-shrink: 0 !important;
+}
+
+.delmins-announcement-separator-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+  display: inline-block !important;
+  color: rgba(255, 255, 255, 0.3) !important;
+  font-size: 12px !important;
+  margin: 0 4px !important;
+  flex-shrink: 0 !important;
+}
+.delmins-announcement-bar-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7::-webkit-scrollbar {
+  display: none !important;
+}
+
+.delmins-announcement-item-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  color: #FFFFFF !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+}
+
+.delmins-announcement-item-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 svg {
+  width: 14px !important;
+  height: 14px !important;
+  flex-shrink: 0 !important;
+}
+
+.delmins-announcement-separator-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+  display: inline-block !important;
+  color: rgba(255, 255, 255, 0.3) !important;
+  font-size: 12px !important;
+  margin: 0 4px !important;
+  flex-shrink: 0 !important;
 }
 
 .delmins-announcement-item-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
@@ -69,93 +126,183 @@ img, svg, picture {
   font-size: 12px !important;
 }
 
-.delmins-main-nav-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-  background-color: #FFFFFF !important;
-  min-height: 60px !important;
-  height: auto !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  padding: 10px 40px !important;
-  position: relative !important;
-  width: 100% !important;
+/* Header Desktop & Laptop (Screen >= 769px) - Single line matching live site */
+@media screen and (min-width: 769px) {
+  .delmins-main-nav-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    background-color: #FFFFFF !important;
+    min-height: 60px !important;
+    height: 60px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 30px !important;
+    position: relative !important;
+    width: 100% !important;
+  }
+
+  .delmins-nav-left-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 14px !important;
+    flex: 1 !important;
+    white-space: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .delmins-nav-link-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    font-size: 12.5px !important;
+    font-weight: 500 !important;
+    color: #333333 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    transition: color 0.2s ease !important;
+  }
+
+  .delmins-nav-link-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7:hover {
+    color: #2D4A1E !important;
+  }
+
+  .delmins-logo-center-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    font-size: 28px !important;
+    font-style: italic !important;
+    font-family: Georgia, 'Times New Roman', serif !important;
+    color: #2D4A1E !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    z-index: 5 !important;
+    order: unset !important;
+    margin: 0 !important;
+  }
+
+  .delmins-logo-registered-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    font-size: 12px !important;
+    vertical-align: super !important;
+    margin-left: 2px !important;
+  }
+
+  .delmins-nav-right-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    flex: 1 !important;
+  }
 }
 
-.delmins-nav-left-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-  display: flex !important;
-  align-items: center !important;
-  gap: 20px !important;
-  flex: 1 !important;
+/* Header Mobile (Screen <= 768px) */
+@media screen and (max-width: 768px) {
+  .delmins-main-nav-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    background-color: #FFFFFF !important;
+    min-height: auto !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 12px 16px !important;
+    position: relative !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .delmins-logo-center-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    position: static !important;
+    transform: none !important;
+    font-size: 26px !important;
+    font-style: italic !important;
+    font-family: Georgia, 'Times New Roman', serif !important;
+    color: #2D4A1E !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    order: 1 !important;
+    margin: 0 auto 4px !important;
+    text-align: center !important;
+    display: block !important;
+  }
+
+  .delmins-logo-registered-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    font-size: 12px !important;
+    vertical-align: super !important;
+    margin-left: 2px !important;
+  }
+
+  .delmins-nav-left-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px 14px !important;
+    order: 2 !important;
+    width: 100% !important;
+  }
+
+  .delmins-nav-link-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: #333333 !important;
+    text-decoration: none !important;
+    white-space: nowrap !important;
+    transition: color 0.2s ease !important;
+  }
+
+  .delmins-nav-link-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7:hover {
+    color: #2D4A1E !important;
+  }
+
+  .delmins-nav-right-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    display: none !important;
+  }
 }
 
-.delmins-nav-link-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-  font-size: 13px !important;
-  font-weight: 500 !important;
-  color: #333333 !important;
-  text-decoration: none !important;
-  white-space: nowrap !important;
-  transition: color 0.2s ease !important;
-}
-
-.delmins-nav-link-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7:hover {
-  color: #2D4A1E !important;
-}
-
-.delmins-logo-center-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-  position: absolute !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  font-size: 28px !important;
-  font-style: italic !important;
-  font-family: Georgia, 'Times New Roman', serif !important;
-  color: #2D4A1E !important;
-  font-weight: 700 !important;
-  text-decoration: none !important;
-  z-index: 5 !important;
-}
-
-.delmins-logo-registered-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-  font-size: 12px !important;
-  vertical-align: super !important;
-  margin-left: 2px !important;
-}
-
-.delmins-nav-right-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  flex: 1 !important;
-}
-
-/* ================= Product Strip Capsule ================= */
+/* ================= Product Strip Capsule (Always Horizontal, No Banner Cutting) ================= */
 .delmins-product-strip-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
   background-color: #F5F0E8 !important;
   border-radius: 50px !important;
-  max-width: 580px !important;
-  width: 90% !important;
-  margin: 0 auto !important;
-  padding: 10px 28px !important;
+  max-width: 620px !important;
+  width: auto !important;
+  margin: 18px auto 24px auto !important;
+  padding: 10px 30px !important;
   display: flex !important;
+  flex-direction: row !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 30px !important;
+  gap: 28px !important;
   position: relative !important;
-  z-index: 100 !important;
-  margin-bottom: -32px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
-  border: 1px solid rgba(212, 175, 55, 0.2) !important;
+  z-index: 50 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid rgba(212, 175, 55, 0.25) !important;
+  box-sizing: border-box !important;
 }
 
 .delmins-product-card-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
   display: flex !important;
+  flex-direction: row !important;
   align-items: center !important;
   gap: 12px !important;
+  text-decoration: none !important;
+  color: inherit !important;
+  flex: 0 1 auto !important;
+  min-width: unset !important;
+}
+
+.delmins-product-icon-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+  width: 38px !important;
+  height: 38px !important;
+  flex-shrink: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .delmins-product-icon-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 img {
-  width: 38px !important;
-  height: 38px !important;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: contain !important;
+  display: block !important;
 }
 
 .delmins-product-title-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
@@ -163,31 +310,37 @@ img, svg, picture {
   font-weight: 700 !important;
   color: #2D4A1E !important;
   letter-spacing: 0.5px !important;
+  white-space: nowrap !important;
 }
 
 .delmins-product-subtitle-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
   font-size: 11px !important;
   color: #666666 !important;
+  white-space: nowrap !important;
 }
 
 .delmins-card-separator-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
   width: 1px !important;
-  height: 30px !important;
+  height: 28px !important;
   background-color: #D8D0C0 !important;
+  flex-shrink: 0 !important;
 }
 
-/* ================= Hero Banner & Points Banner ================= */
+/* ================= Hero Banner (No Cuttings, Exact Desktop Fit) ================= */
 #hero,
+#shopify-section-template--20475685142598__image_banner,
 #shopify-section-template--20475685142598__image_banner_nMEdfG {
   display: block !important;
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   position: relative !important;
-  z-index: 10 !important;
+  z-index: 1 !important;
+  overflow: hidden !important;
 }
 
 #hero .banner,
+#shopify-section-template--20475685142598__image_banner .banner,
 #shopify-section-template--20475685142598__image_banner_nMEdfG .banner {
   display: block !important;
   width: 100% !important;
@@ -201,6 +354,11 @@ img, svg, picture {
 #hero .banner__media::before,
 #hero .banner__media::after,
 #hero .banner__content::before,
+#hero .banner__content::after,
+#shopify-section-template--20475685142598__image_banner .banner::before,
+#shopify-section-template--20475685142598__image_banner .banner::after,
+#shopify-section-template--20475685142598__image_banner .banner__media::before,
+#shopify-section-template--20475685142598__image_banner .banner__media::after,
 #shopify-section-template--20475685142598__image_banner_nMEdfG .banner::before,
 #shopify-section-template--20475685142598__image_banner_nMEdfG .banner::after,
 #shopify-section-template--20475685142598__image_banner_nMEdfG .banner__media::before,
@@ -210,7 +368,17 @@ img, svg, picture {
   content: none !important;
 }
 
+#hero .banner__media,
+#shopify-section-template--20475685142598__image_banner .banner__media,
+#shopify-section-template--20475685142598__image_banner_nMEdfG .banner__media {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
 #hero .banner__media img,
+#shopify-section-template--20475685142598__image_banner .banner__media img,
 #shopify-section-template--20475685142598__image_banner_nMEdfG .banner__media img {
   display: block !important;
   width: 100% !important;
@@ -218,85 +386,41 @@ img, svg, picture {
   margin: 0 !important;
   padding: 0 !important;
   object-fit: contain !important;
+  max-width: 100% !important;
 }
 
-/* ================= Mobile Breakpoint (<768px) ================= */
+/* Mobile Breakpoint (<768px) - Keeps Everything Clean and No Cuttings */
 @media screen and (max-width: 768px) {
-  /* Announcement Bar 2-line layout */
-  .delmins-announcement-bar-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    flex-wrap: wrap !important;
-    height: auto !important;
-    padding: 8px 12px !important;
-    justify-content: center !important;
-    gap: 6px 14px !important;
-  }
-
-  .delmins-announcement-separator-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    display: none !important;
-  }
-
-  .delmins-announcement-item-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    font-size: 11px !important;
-  }
-
-  /* Main Nav - Stacked Links then Centered Logo */
-  .delmins-main-nav-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    height: auto !important;
-    padding: 14px 12px !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 12px !important;
-  }
-
-  .delmins-nav-left-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 10px 14px !important;
-    order: 1 !important;
-    width: 100% !important;
-  }
-
-  .delmins-nav-link-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    font-size: 12.5px !important;
-  }
-
-  .delmins-logo-center-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    position: static !important;
-    transform: none !important;
-    font-size: 26px !important;
-    order: 2 !important;
-    margin: 4px auto !important;
-    text-align: center !important;
-  }
-
-  .delmins-nav-right-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    display: none !important;
-  }
-
-  /* Product Strip Capsule Stacked on Mobile */
   .delmins-product-strip-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    flex-direction: column !important;
-    gap: 14px !important;
-    padding: 16px 20px !important;
-    border-radius: 28px !important;
-    max-width: 90% !important;
-    width: 90% !important;
-    margin: 0 auto !important;
-    margin-bottom: -50px !important;
+    flex-direction: row !important;
+    gap: 12px !important;
+    padding: 6px 14px !important;
+    border-radius: 40px !important;
+    max-width: 95% !important;
+    width: auto !important;
+    margin: 8px auto 10px !important;
   }
 
   .delmins-product-card-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    width: 100% !important;
-    justify-content: flex-start !important;
-    padding-left: 20px !important;
+    gap: 6px !important;
+    padding: 2px 4px !important;
+  }
+
+  .delmins-product-icon-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 img {
+    width: 26px !important;
+    height: 26px !important;
+  }
+
+  .delmins-product-title-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    font-size: 10.5px !important;
+  }
+
+  .delmins-product-subtitle-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+    font-size: 9px !important;
   }
 
   .delmins-card-separator-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
-    width: 85% !important;
-    height: 1px !important;
-    margin: 0 auto !important;
+    height: 22px !important;
   }
 }
 
