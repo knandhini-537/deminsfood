@@ -24,15 +24,10 @@
 <script defer="defer" src="//delminsfood.com/cdn/shop/t/4/assets/details-modal.js?v=25581673532751508451779421894"></script>
 <script defer="defer" src="//delminsfood.com/cdn/shop/t/4/assets/search-form.js?v=133129549252120666541779421894"></script><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta content="/69291081798/digital_wallets/dialog" id="shopify-digital-wallet" name="shopify-digital-wallet"/>
 <link href="/.well-known/ucp" rel="ucp" version="2026-08-25"/>
-
-
 <script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
 <script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
-
 <script id="shop-js-analytics" type="application/json">{"pageType":"page"}</script>
 <script async="" defer="defer" src="https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.en.esm.js" type="module"></script>
-
-
 <script id="__st">var __st={"a":69291081798,"offset":19800,"reqid":"289e9270-7e62-4d54-b88a-c5faef38a99c-1791617565","pageurl":"delminsfood.com\/pages\/our-story","s":"pages-122004373574","u":"0ad3b1422c94","p":"page","rtyp":"page","rid":122004373574};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protected by hCaptcha',privacyText:'Privacy',termsText:'Terms'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
@@ -46,10 +41,8 @@
   window.Shopify.MCP.mcpEndpoint = "https:\/\/delminsfood.com\/api\/mcp";
   window.Shopify.MCP.tools = [{"name":"search_shop_policies_and_faqs","description":"Used to get facts about the stores policies, products, or services.\nSome examples of questions you can ask are:\n  - What is your return policy?\n  - What is your shipping policy?\n  - What is your phone number?\n  - What are your hours of operation?\"\nSet policy_types to also get the store's written policies (full text and URL).\n","inputSchema":{"$schema":"https:\/\/json-schema.org\/draft\/2020-12\/schema","type":"object","properties":{"query":{"type":"string","description":"A natural language query."},"context":{"type":"string","description":"Additional information about the request such as user demographics, mood, location, or other relevant details that could help in tailoring the response appropriately."},"policy_types":{"type":"array","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]},"description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns\/exchanges\/damaged items, [\"contact\"] for phone\/hours\/address. Include every kind the question touches. Omit it to get only FAQ answers."}},"required":["query"]}}];
 </script>
-
 <script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://delminsfood.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.en.js",t.type="module",document.head.appendChild(t)}};
 </script>
-
 <script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
 </script>
 <script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
@@ -371,8 +364,6 @@
       }
     </script>
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch"/>
-
-
 <script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
@@ -382,7 +373,6 @@
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
 </script>
-
 <script data-application="storefront-renderer" data-monorail-region="shop_domain" data-page-type="page" data-render-region="gcp-asia-southeast1" data-resource-timing-sampling-rate="10" data-shop-id="69291081798" data-shs="true" data-shs-beacon="true" data-shs-beacon-endpoint="https://delminsfood.com/api/collect" data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1" data-theme-instance-id="149118517318" data-theme-name="Dawn" data-theme-version="15.4.1" defer="" src="https://delminsfood.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.10.1.min.js"></script>
 <meta content="e2551778-459a-4043-a63a-aa52251bb5fe" data-expiration="1823175165000" name="shopify-y"/><meta content="57c673ec-3c62-450a-8eb5-7d47c668ff25" data-expiration="1791619365000" name="shopify-s"/>
 <link href="../../assets/css/responsive.css" rel="stylesheet"/><link href="../../assets/css/theme-sections.css" rel="stylesheet"/></head>
@@ -787,7 +777,41 @@
 <div class="delmins-logo-center-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7">
       Delmins<span class="delmins-logo-registered-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7">®</span>
 </div>
-<div class="delmins-nav-right-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7"></div>
+<div class="delmins-nav-right-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7"><div class="delmins-language-selector-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7">
+<button aria-label="Select language" class="delmins-language-button-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7" data-language-toggle="" type="button">
+<span class="delmins-current-lang-flag" style="font-weight: 700; font-size: 11px; letter-spacing: 0.5px;">US</span>
+<span class="delmins-current-lang-code" style="font-weight: 700; font-size: 13px; margin-left: 2px;">US</span>
+<svg fill="none" height="12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="margin-left: 2px;" viewbox="0 0 24 24" width="12" xmlns="http://www.w3.org/2000/svg">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg>
+</button>
+<div class="delmins-language-dropdown-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7" data-language-dropdown="">
+          <button type="button" class="delmins-language-option-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7" data-lang-code="en">
+            <span style="font-weight: 700; font-size: 11px; width: 22px;">US</span>
+            <span>USA (English)</span>
+          </button>
+          <button type="button" class="delmins-language-option-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7" data-lang-code="en-IN">
+            <span style="font-weight: 700; font-size: 11px; width: 22px;">IN</span>
+            <span>India (English)</span>
+          </button>
+          <button type="button" class="delmins-language-option-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7" data-lang-code="hi">
+            <span style="font-weight: 700; font-size: 11px; width: 22px;">IN</span>
+            <span>India (Hindi)</span>
+          </button>
+          <button type="button" class="delmins-language-option-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7" data-lang-code="en-GB">
+            <span style="font-weight: 700; font-size: 11px; width: 22px;">GB</span>
+            <span>UK (English)</span>
+          </button>
+          <button type="button" class="delmins-language-option-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7" data-lang-code="ar">
+            <span style="font-weight: 700; font-size: 11px; width: 22px;">AE</span>
+            <span>UAE (Arabic)</span>
+          </button>
+          <button type="button" class="delmins-language-option-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7" data-lang-code="de">
+            <span style="font-weight: 700; font-size: 11px; width: 22px;">DE</span>
+            <span>Germany (Deutsch)</span>
+          </button>
+</div>
+</div></div>
 </nav>
 <div class="delmins-product-strip-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7">
 <div class="delmins-product-card-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7">
@@ -2529,23 +2553,51 @@
 <h3 class="ai-luxury-footer-heading-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">Quick Links</h3>
 <div class="ai-luxury-footer-divider-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"></div>
 <ul class="ai-luxury-footer-links-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../index.html">Home</a></li>
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections/all.html">Shop</a></li>
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="/pages/about">About Us</a></li>
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../pages/certifications.html">Certifications</a></li>
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="/pages/export">Export</a></li>
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../pages/contact.html">Contact</a></li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../index.html">Home</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections/all.html">Shop</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections.html">Categories</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../pages/our-story.html">Our Story</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../pages/certifications.html">Certifications</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../pages/contact.html">Contact</a>
+</li>
 </ul>
 </div>
 <div class="ai-luxury-footer-column-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
 <h3 class="ai-luxury-footer-heading-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">Product Categories</h3>
 <div class="ai-luxury-footer-divider-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"></div>
 <ul class="ai-luxury-footer-links-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../products/ready-to-eat-pani-puri-kit.html">Pani Puri Kit</a></li>
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../products/jaali-chips.html">Jali Chips</a></li>
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="/collections/gourmet-snacks">Gourmet Snacks</a></li>
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="/collections/ready-to-eat">Ready To Eat</a></li>
-<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc"><a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="/collections/export-products">Export Products</a></li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections/dehydrated-vegetables.html">Dehydrated Vegetables</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections/dehydrated-flowers.html">Dehydrated Flowers</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections/dehydrated-fruits.html">Dehydrated Fruits</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections/dehydrated-herbs.html">Dehydrated Herbs</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections/dehydrated-spices.html">Dehydrated Spices</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections/gourmet-delight.html">Gourmet Delight</a>
+</li>
+<li class="ai-luxury-footer-link-item-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
+<a class="ai-luxury-footer-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../collections/shop-all.html">Shop All</a>
+</li>
 </ul>
 </div>
 <div class="ai-luxury-footer-column-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
@@ -2643,9 +2695,8 @@
 <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 <div class="ai-luxury-footer-bottom-links-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc">
-<a class="ai-luxury-footer-bottom-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="/policies/privacy-policy">Privacy Policy</a>
-<a class="ai-luxury-footer-bottom-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="/policies/terms-of-service">Terms &amp; Conditions</a>
-<a class="ai-luxury-footer-bottom-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="/policies/refund-policy">Refund &amp; Returns</a>
+<a class="ai-luxury-footer-bottom-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../policies/privacy-policy.html">Privacy Policy</a>
+<a class="ai-luxury-footer-bottom-link-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc" href="../../policies/terms-and-conditions.html">Terms &amp; Conditions</a>
 </div>
 </div>
 </div>
@@ -2685,5 +2736,5 @@
 <li id="a11y-new-window-message">Opens in a new window.</li>
 </ul>
 <script defer="defer" src="//delminsfood.com/cdn/shop/t/4/assets/predictive-search.js?v=57209189334897115771779421894"></script><script data-source-attribution="shopify.standard_actions" src="https://cdn.shopify.com/storefront/standard-actions.js" type="module"></script>
-</body>
+<script defer="True" src="../../assets/js/language-switcher.js"></script></body>
 </html>
