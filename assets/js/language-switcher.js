@@ -997,12 +997,21 @@
 };
 
   const languageLabels = {
-    "en": { flag: "US", code: "US", name: "USA (English)" },
-    "en-IN": { flag: "IN", code: "IN", name: "India (English)" },
-    "hi": { flag: "IN", code: "IN", name: "India (Hindi)" },
-    "en-GB": { flag: "GB", code: "GB", name: "UK (English)" },
-    "ar": { flag: "AE", code: "AE", name: "UAE (Arabic)" },
-    "de": { flag: "DE", code: "DE", name: "Germany (Deutsch)" }
+    "en": { code: "US", name: "USA (English)" },
+    "en-IN": { code: "IN", name: "India (English)" },
+    "hi": { code: "IN", name: "India (Hindi)" },
+    "en-GB": { code: "GB", name: "UK (English)" },
+    "ar": { code: "AE", name: "UAE (Arabic)" },
+    "de": { code: "DE", name: "Germany (Deutsch)" }
+  };
+
+  const languageFlags = {
+    "en": `<svg class="delmins-flag-icon" width="20" height="14" viewBox="0 0 640 480" style="border-radius:2px; display:inline-block; vertical-align:middle; flex-shrink:0; box-shadow:0 0 1px rgba(0,0,0,0.5);"><g fill-rule="evenodd"><path fill="#bd3d44" d="M0 0h640v480H0z"/><path stroke="#fff" stroke-width="37" d="M0 55.5h640M0 129h640M0 203h640M0 277h640M0 351h640M0 424.5h640"/><path fill="#192f5d" d="M0 0h260v222H0z"/><g fill="#fff"><circle cx="26" cy="20" r="6"/><circle cx="78" cy="20" r="6"/><circle cx="130" cy="20" r="6"/><circle cx="182" cy="20" r="6"/><circle cx="234" cy="20" r="6"/><circle cx="52" cy="42" r="6"/><circle cx="104" cy="42" r="6"/><circle cx="156" cy="42" r="6"/><circle cx="208" cy="42" r="6"/><circle cx="26" cy="64" r="6"/><circle cx="78" cy="64" r="6"/><circle cx="130" cy="64" r="6"/><circle cx="182" cy="64" r="6"/><circle cx="234" cy="64" r="6"/><circle cx="52" cy="86" r="6"/><circle cx="104" cy="86" r="6"/><circle cx="156" cy="86" r="6"/><circle cx="208" cy="86" r="6"/><circle cx="26" cy="108" r="6"/><circle cx="78" cy="108" r="6"/><circle cx="130" cy="108" r="6"/><circle cx="182" cy="108" r="6"/><circle cx="234" cy="108" r="6"/><circle cx="52" cy="130" r="6"/><circle cx="104" cy="130" r="6"/><circle cx="156" cy="130" r="6"/><circle cx="208" cy="130" r="6"/><circle cx="26" cy="152" r="6"/><circle cx="78" cy="152" r="6"/><circle cx="130" cy="152" r="6"/><circle cx="182" cy="152" r="6"/><circle cx="234" cy="152" r="6"/><circle cx="52" cy="174" r="6"/><circle cx="104" cy="174" r="6"/><circle cx="156" cy="174" r="6"/><circle cx="208" cy="174" r="6"/><circle cx="26" cy="196" r="6"/><circle cx="78" cy="196" r="6"/><circle cx="130" cy="196" r="6"/><circle cx="182" cy="196" r="6"/><circle cx="234" cy="196" r="6"/></g></g></svg>`,
+    "en-IN": `<svg class="delmins-flag-icon" width="20" height="14" viewBox="0 0 640 480" style="border-radius:2px; display:inline-block; vertical-align:middle; flex-shrink:0; box-shadow:0 0 1px rgba(0,0,0,0.5);"><path fill="#f93" d="M0 0h640v160H0z"/><path fill="#fff" d="M0 160h640v160H0z"/><path fill="#128807" d="M0 320h640v160H0z"/><circle cx="320" cy="240" r="50" fill="none" stroke="#008" stroke-width="8"/><circle cx="320" cy="240" r="14" fill="#008"/></svg>`,
+    "hi": `<svg class="delmins-flag-icon" width="20" height="14" viewBox="0 0 640 480" style="border-radius:2px; display:inline-block; vertical-align:middle; flex-shrink:0; box-shadow:0 0 1px rgba(0,0,0,0.5);"><path fill="#f93" d="M0 0h640v160H0z"/><path fill="#fff" d="M0 160h640v160H0z"/><path fill="#128807" d="M0 320h640v160H0z"/><circle cx="320" cy="240" r="50" fill="none" stroke="#008" stroke-width="8"/><circle cx="320" cy="240" r="14" fill="#008"/></svg>`,
+    "en-GB": `<svg class="delmins-flag-icon" width="20" height="14" viewBox="0 0 640 480" style="border-radius:2px; display:inline-block; vertical-align:middle; flex-shrink:0; box-shadow:0 0 1px rgba(0,0,0,0.5);"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#fff" d="M75 0l245 180L565 0h75v60L435 240l205 180v60h-75L320 300 75 480H0v-60l205-180L0 60V0z"/><path fill="#c8102e" d="M424 288L640 450v30h-40L360 312zM216 192L0 30V0h40l240 162zM0 450l216-162 24 30L40 480H0zM640 30L424 192l-24-30L600 0h40z"/><path fill="#fff" d="M240 0h160v480H240zM0 160h640v160H0z"/><path fill="#c8102e" d="M272 0h96v480h-96zM0 192h640v96H0z"/></svg>`,
+    "ar": `<svg class="delmins-flag-icon" width="20" height="14" viewBox="0 0 640 480" style="border-radius:2px; display:inline-block; vertical-align:middle; flex-shrink:0; box-shadow:0 0 1px rgba(0,0,0,0.5);"><path fill="#00732f" d="M0 0h640v160H0z"/><path fill="#fff" d="M0 160h640v160H0z"/><path fill="#000" d="M0 320h640v160H0z"/><path fill="#f00" d="M0 0h190v480H0z"/></svg>`,
+    "de": `<svg class="delmins-flag-icon" width="20" height="14" viewBox="0 0 640 480" style="border-radius:2px; display:inline-block; vertical-align:middle; flex-shrink:0; box-shadow:0 0 1px rgba(0,0,0,0.5);"><path fill="#000" d="M0 0h640v160H0z"/><path fill="#d00" d="M0 160h640v160H0z"/><path fill="#ffce00" d="M0 320h640v160H0z"/></svg>`
   };
 
   // Cache sorted keys by length descending for each language
@@ -1030,13 +1039,16 @@
           const p = node.parentElement;
           if (!p) return NodeFilter.FILTER_REJECT;
           const tag = p.tagName.toUpperCase();
-          if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT') {
+          if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'NOSCRIPT' || tag === 'SVG' || tag === 'PATH') {
             return NodeFilter.FILTER_REJECT;
           }
           if (p.closest('.delmins-language-dropdown-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7')) {
             return NodeFilter.FILTER_REJECT;
           }
-          if (p.closest('.delmins-current-lang-flag') || p.closest('.delmins-current-lang-code')) {
+          if (p.closest('.delmins-policy-lang-en') || p.closest('.delmins-policy-lang-hi')) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          if (p.closest('.delmins-current-lang-flag') || p.closest('.delmins-current-lang-code') || p.closest('.delmins-flag-icon')) {
             return NodeFilter.FILTER_REJECT;
           }
           if (node.nodeValue && node.nodeValue.trim().length > 0) {
@@ -1073,9 +1085,10 @@
 
     const info = languageLabels[lang] || languageLabels['en'];
 
-    // Update button text & flag
+    // Update button flag SVG & code
+    const flagSvg = languageFlags[lang] || languageFlags['en'];
     document.querySelectorAll('.delmins-current-lang-flag').forEach(el => {
-      el.textContent = info.flag;
+      el.innerHTML = flagSvg;
     });
     document.querySelectorAll('.delmins-current-lang-code').forEach(el => {
       el.textContent = info.code;
@@ -1155,19 +1168,30 @@
     document.querySelectorAll('.delmins-language-dropdown-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7').forEach(dd => {
       dd.classList.remove('active');
     });
+
+    // Toggle dedicated policy translation containers (T&C and Privacy Policy)
+    const policyEnContainers = document.querySelectorAll('.delmins-policy-lang-en');
+    const policyHiContainers = document.querySelectorAll('.delmins-policy-lang-hi');
+    if (policyEnContainers.length > 0 && policyHiContainers.length > 0) {
+      if (lang === 'hi') {
+        policyEnContainers.forEach(el => el.style.display = 'none');
+        policyHiContainers.forEach(el => el.style.display = 'block');
+      } else {
+        policyEnContainers.forEach(el => el.style.display = 'block');
+        policyHiContainers.forEach(el => el.style.display = 'none');
+      }
+    }
   }
 
   window.setDelminsLanguage = applyLanguage;
 
   function init() {
     collectNodes();
-    // Default is strictly English ('en') unless user has previously chosen another language
     const savedLang = localStorage.getItem('delmins_selected_lang') || 'en';
     applyLanguage(savedLang);
 
     // Global click listener with capture
     document.addEventListener('click', function(e) {
-      // Toggle button
       const toggle = e.target.closest('[data-language-toggle]');
       if (toggle) {
         e.preventDefault();
@@ -1180,7 +1204,6 @@
         return;
       }
 
-      // Option selection
       const opt = e.target.closest('.delmins-language-option-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7');
       if (opt) {
         e.preventDefault();
@@ -1192,7 +1215,6 @@
         return;
       }
 
-      // Close dropdown on outside click
       if (!e.target.closest('.delmins-language-selector-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7')) {
         document.querySelectorAll('.delmins-language-dropdown-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7').forEach(dd => {
           dd.classList.remove('active');

@@ -3267,8 +3267,8 @@
 
   .ai-luxury-footer-main-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    grid-template-columns: 1.4fr 1fr 1.1fr 2.2fr;
+    gap: 36px;
     padding-bottom: 50px;
     border-bottom: 1px solid rgba(216, 176, 106, 0.15);
   }
@@ -3392,9 +3392,9 @@
   }
 
   .ai-luxury-footer-export-cards-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
   }
 
   .ai-luxury-footer-export-card-atvbistrpak9ssjuwoaigenblock15e2bc3xtkfdc {
@@ -3667,3 +3667,15 @@
       gap: 10px;
     }
   }
+
+.delmins-language-button-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+.delmins-language-option-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  padding: 8px 14px !important;
+}
