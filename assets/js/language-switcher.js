@@ -1045,7 +1045,7 @@
           if (p.closest('.delmins-language-dropdown-ak2lsdldbmtdik3zicaigenblockf12f520r7wab7')) {
             return NodeFilter.FILTER_REJECT;
           }
-          if (p.closest('.delmins-policy-lang-en') || p.closest('.delmins-policy-lang-hi')) {
+          if (p.closest('.delmins-policy-lang-en') || p.closest('.delmins-policy-lang-hi') || p.closest('.delmins-product-desc-en') || p.closest('.delmins-product-desc-hi')) {
             return NodeFilter.FILTER_REJECT;
           }
           if (p.closest('.delmins-current-lang-flag') || p.closest('.delmins-current-lang-code') || p.closest('.delmins-flag-icon')) {
@@ -1179,6 +1179,19 @@
       } else {
         policyEnContainers.forEach(el => el.style.display = 'block');
         policyHiContainers.forEach(el => el.style.display = 'none');
+      }
+    }
+
+    // Toggle dedicated product description containers (Jali Chips and Pani Puri Kit)
+    const prodDescEnContainers = document.querySelectorAll('.delmins-product-desc-en');
+    const prodDescHiContainers = document.querySelectorAll('.delmins-product-desc-hi');
+    if (prodDescEnContainers.length > 0 && prodDescHiContainers.length > 0) {
+      if (lang === 'hi') {
+        prodDescEnContainers.forEach(el => el.style.display = 'none');
+        prodDescHiContainers.forEach(el => el.style.display = 'block');
+      } else {
+        prodDescEnContainers.forEach(el => el.style.display = 'block');
+        prodDescHiContainers.forEach(el => el.style.display = 'none');
       }
     }
   }
